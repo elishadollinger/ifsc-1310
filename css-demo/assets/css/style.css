@@ -1,3 +1,6 @@
-/* CSS Demo Stylesheet */
-
-body {background-color: blue;}
+body {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
