@@ -10,6 +10,6 @@ body {
 main{
 }
 
-header{
+header.primary{
   background:red;
 }
