@@ -11,50 +11,326 @@ html {
   box-sizing: inherit;
 }
 
+/*  ---------------Utility Classes-----------------  */
+
+.container {
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+.img-right{
+  float:right;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  margin:10px 0 10px 20px;
+  max-width:30vw;
+}
+.img-left{
+  float:left;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  margin:10px 20px 10px 0;
+  max-width:30vw;
+}
+.img-center{
+  display:block;
+  margin:10px auto;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+/*  --------------- Responsive Images-----------------  */
+
+img{
+  max-width:100%;
+}
+
 body {
-  font-family: "Oswald", serif;
+  font-family: "Roboto", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  margin:0;
+  margin: 0;
 }
 
-main{
+main {
 }
 
-header.primary{
-background-color:#3b638b;
-color:#ffffff;
-text-align: center;
-text-shadow: 1px 1px #000;
-/*long form*/
+header.primary {
+background-color: #0013ff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='46' viewBox='0 0 70 46'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2315053c' fill-opacity='0.4'%3E%3Cpolygon points='68 44 62 44 62 46 56 46 56 44 52 44 52 46 46 46 46 44 40 44 40 46 38 46 38 44 32 44 32 46 26 46 26 44 22 44 22 46 16 46 16 44 12 44 12 46 6 46 6 44 0 44 0 42 8 42 8 28 6 28 6 0 12 0 12 28 10 28 10 42 18 42 18 28 16 28 16 0 22 0 22 28 20 28 20 42 28 42 28 28 26 28 26 0 32 0 32 28 30 28 30 42 38 42 38 0 40 0 40 42 48 42 48 28 46 28 46 0 52 0 52 28 50 28 50 42 58 42 58 28 56 28 56 0 62 0 62 28 60 28 60 42 68 42 68 0 70 0 70 46 68 46'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: auto;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  /*long form*/
   padding-top: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
-/*Single value short hand*/
-  padding: 40px;  
-/* T,R,B,L */
-  padding: 20px 40px 20px 40px;  
-/* Two Value Top/Bottom / L/R */
-  padding: 20px 40px; 
+  /*Single value short hand*/
+  padding: 40px;
+  /* T,R,B,L */
+  padding: 20px 40px 20px 40px;
+  /* Two Value Top/Bottom / L/R */
+  padding: 20px 40px;
 }
 
-header.prinary h1{
-  font-size:2.4rem;
-  /*top | left and right | bottom*/
-  margin: 20px 0 0;
+header.primary h1 {
+  font-size: 3.4rem;
+  /* top | left and right | bottom */
+  margin: 10px 0 5px;
 }
 
-header.primary h1 a{
-  color:#ffffff;
+header.primary h1 a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size:auto;
+}
+
+header.primary h2 {
+  font-size: auto;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+nav.primary {
+}
+nav.primary ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav.primary ul li {
+  list-style-type: none;
+}
+nav.primary ul li a {
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid #c0c0c0;
+  padding: 5px 7.5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+nav.primary ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content {
+}
+
+#content h2 {
+  color: #3b638b;
+  border-bottom: 1px dotted darkgrey;
+}
+
+#content h3 {
+  border-left: 7.5px solid #3b638b;
+  padding: 5px 0 5px 10px;
+}
+
+#blog{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:30px;
+  border-top:1px solid #cccccc;
+  border-bottom:1px solid #cccccc;
+  padding:40px 0;
+  
+}
+
+#blog article.post{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  padding:10px;
+  font-size:.8rem;
+  border-radius:4px;
+  transition:.4s;
+}
+
+#blog article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+figure{
+  margin:0;
+}
+
+figcaption, time{
+  text-transform:uppercase;
+  font-size:.6rem;
+}
+
+#blog article.post a{
+  color: #3b638b;
+}
+
+#practice h2{
+    color: #3b638b;
+    border-bottom:1px dotted #cccccc;
+}
+
+#practice a:link{
+color: #3b638b;
+transition:.5s;
+}
+
+#practice a:hover{
   text-decoration:none;
 }
 
-header.primary h2{
-  font-size: 1.3rem;
-  margin: 0;
-  letter-spacing:.2px;
+
+table{
+  width:100%;
+  border:1px solid #c0c0c0;
+  border-collapse:collapse;
 }
+caption{
+  font-weight: bold;
+  margin: 10px;
+  font-size:1.3rem;
+}
+tr:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+td:nth-child(n+2){
+text-align:right;
+}
+
+tr:hover{
+      background-color: rgba(0, 0, 0, 0.3);
+}
+th{
+background-color: #172635;
+color:#ffffff;
+padding:7.5px;  
+}
+td{
+border:1px solid #c0c0c0;
+padding:5px;
+}
+
+#practice ol{
+  list-style-type:lower-roman;
+  font-style:italic;
+}
+
+#practice ul li ul li
+{
+  list-style-type:square;
+}
+
+#practice dl dt
+{
+  font-weight:bold;
+}
+
+#practice dl dd
+{
+  margin:0;
+}
+
+dd+dt
+{
+  margin-top:20px;
+}
+
+#practice blockquote
+{
+  border:4px double;
+  padding:20px 40px;
+  margin:40px 80px;
+  border-radius:30px 0;
+  background-color:#3b638b;
+  color:#fff;
+  text-shadow:1px 1px #000;
+}
+
+#practice blockquote cite
+{
+  display:block;
+  text-align:right;
+  font-size:0.5rem;
+  margin-top:1rem;
+}
+
+aside[role="complementary"]{
+background-color: #172635;
+color: #ffffff;
+padding:40px 0;  
+}
+
+aside .container{
+  display:flex;
+  flex-direction: row;
+  gap:40px;
+}
+
+aside .container a{
+  color:#ffffff;
+}
+
+aside .container a:last-child{
+  display:block;
+  text-align:right;
+}
+
+aside article footer{
+  display:none;
+}
+
+#colophon{
+  background-color: #0013ff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='46' viewBox='0 0 70 46'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2315053c' fill-opacity='0.4'%3E%3Cpolygon points='68 44 62 44 62 46 56 46 56 44 52 44 52 46 46 46 46 44 40 44 40 46 38 46 38 44 32 44 32 46 26 46 26 44 22 44 22 46 16 46 16 44 12 44 12 46 6 46 6 44 0 44 0 42 8 42 8 28 6 28 6 0 12 0 12 28 10 28 10 42 18 42 18 28 16 28 16 0 22 0 22 28 20 28 20 42 28 42 28 28 26 28 26 0 32 0 32 28 30 28 30 42 38 42 38 0 40 0 40 42 48 42 48 28 46 28 46 0 52 0 52 28 50 28 50 42 58 42 58 28 56 28 56 0 62 0 62 28 60 28 60 42 68 42 68 0 70 0 70 46 68 46'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: auto;
+  padding:5px;
+  text-align:center;
+  color:#ffffff;
+  font-size:1.2rem;
+  text-shadow:1px 1px #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 440px) {
+  nav.primary ul {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 200px;
+    margin: 20px auto;
+  }
+
+  nav.primary ul li a {
+    display: block;
+  }
+}
+
+
+
 
 
