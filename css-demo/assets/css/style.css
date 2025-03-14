@@ -14,30 +14,31 @@ html {
 /*  ---------------Utility Classes-----------------  */
 
 .container {
-  width: 80vw;
-  max-width: 960px;
-  margin: 40px auto;
+  width: auto;
+  max-width: 1000px;
+  margin: 20px auto;
 }
 
 .img-right{
   float:right;
-  border:1px solid #c0c0c0;
+  border:1px solid #ffffff;
   padding:5px;
-  margin:10px 0 10px 20px;
-  max-width:30vw;
+  margin:10px 20px 10px 0;
+  max-width:50vw;
 }
 .img-left{
   float:left;
-  border:1px solid #c0c0c0;
+  border:1px solid #ffffff;
   padding:5px;
   margin:10px 20px 10px 0;
-  max-width:30vw;
+  max-width:50vw;
 }
 .img-center{
   display:block;
   margin:10px auto;
-  border:1px solid #c0c0c0;
-  padding:5px;
+  border:1px solid #ffffff;
+  padding:auto;
+  max-width:50vw;
 }
 
 /*  --------------- Responsive Images-----------------  */
@@ -47,11 +48,11 @@ img{
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: "Open Sans", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 650;
   font-style: normal;
-  margin: 0;
+  margin: 20;
 }
 
 main {
@@ -64,24 +65,24 @@ background-attachment: fixed;
 background-size: auto;
   color: #ffffff;
   text-align: center;
-  text-shadow: 2px 2px #000;
+  text-shadow: 3px 3px #000;
   /*long form*/
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
   /*Single value short hand*/
   padding: 40px;
   /* T,R,B,L */
-  padding: 20px 40px 20px 40px;
+  padding: 10px 20px 10px 20px;
   /* Two Value Top/Bottom / L/R */
   padding: 20px 40px;
 }
 
 header.primary h1 {
-  font-size: 3.4rem;
+  font-size: 5.4rem;
   /* top | left and right | bottom */
-  margin: 10px 0 5px;
+  margin: 10px 0 10px;
 }
 
 header.primary h1 a {
@@ -92,16 +93,16 @@ header.primary h1 a {
 
 header.primary h2 {
   font-size: auto;
-  margin: 0;
-  letter-spacing: 0.2px;
+  margin: 5px;
+  letter-spacing: 0.5px;
 }
 
 nav.primary {
 }
 nav.primary ul {
-  padding: 0;
+  padding: 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-around;
 }
 nav.primary ul li {
@@ -109,66 +110,75 @@ nav.primary ul li {
 }
 nav.primary ul li a {
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   text-decoration: none;
-  border: 1px solid #c0c0c0;
-  padding: 5px 7.5px;
-  background-color: rgba(0, 0, 0, 0.4);
+  font-style:italic;
+  border: 1px dotted #c0c0c0;
+  padding: 2px 5px;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  transition: 0.4s;
+  transition: 0.8s;
 }
 
 nav.primary ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 #content {
 }
 
 #content h2 {
-  color: #3b638b;
-  border-bottom: 1px dotted darkgrey;
+  color: #000000;
+  border-bottom: 3px dashed blue;
 }
 
 #content h3 {
-  border-left: 7.5px solid #3b638b;
-  padding: 5px 0 5px 10px;
+  border-left: 15px solid #bd062d;
+  padding: 5px 20px 5px 10px;
 }
 
 #blog{
+  text-align:left;
   display:flex;
-  flex-direction:row;
+  flex-direction:row-reverse;
   justify-content:center;
-  gap:30px;
-  border-top:1px solid #cccccc;
-  border-bottom:1px solid #cccccc;
+  gap:50px;
+  border-top:15px solid #613500;
+  border-bottom:15px solid #613500;
   padding:40px 0;
   
 }
 
 #blog article.post{
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   padding:10px;
-  font-size:.8rem;
-  border-radius:4px;
-  transition:.4s;
+  font-size:1rem;
+  border-radius:7px;
+  transition:.55s;
 }
 
 #blog article.post:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.4);
 }
 
 figure{
-  margin:0;
+  margin:3px;
 }
 
-figcaption, time{
+figcaption{
+  text-align:center;
   text-transform:uppercase;
-  font-size:.6rem;
+  font-size:.65rem;
+}
+
+time{
+  display:block;
+  text-align:center;
+  font-size:.7rem;
 }
 
 #blog article.post a{
-  color: #3b638b;
+  color: #3dc4c2;
 }
 
 #practice h2{
