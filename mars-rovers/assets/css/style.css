@@ -18,7 +18,6 @@ html {
 .container {
   width: 90%;
   margin: auto;
-  max-width: auto;
 }
 
 .img-right {
@@ -54,6 +53,7 @@ img {
   height: auto;
 }
 
+/* Header Styles */
 header.primary {
   background-color: #181c1f;
   text-align: center;
@@ -73,12 +73,18 @@ header.primary::before {
   bottom: 0;
   left: 0;
   opacity: 0.65;
+  z-index: 0;
+}
+
+header.primary h1,
+header.primary h2 {
+  position: relative;
+  z-index: 1;
 }
 
 header.primary h1 {
   font-size: 3.2rem;
   margin: 20px 0;
-  position: relative;
 }
 
 header.primary h1 a {
@@ -98,7 +104,6 @@ header.primary h2 {
   font-family: "Goldman", cursive;
   font-size: 2em;
   margin: 20px auto 40px;
-  position: relative;
 }
 
 header.primary nav ul {
@@ -109,11 +114,10 @@ header.primary nav ul {
   padding: 0;
   max-width: 900px;
   margin: 20px auto;
+  list-style: none;
 }
 
 header.primary nav li {
-  list-style-type: none;
-  padding: 0;
   width: 20%;
 }
 
@@ -126,29 +130,29 @@ header.primary nav ul li a {
   padding: 8px 16px;
   border: 1px dotted;
   border-radius: 10px;
-  transition: 2s;
+  transition: background-color 1s;
   display: block;
+  text-align: center;
 }
 
-nav.primary ul li a:hover {
+header.primary nav ul li a:hover {
   background-color: rgba(50, 50, 20, 1);
-  transition: 1s;
 }
 
-/* Content */
+/* Content Section */
 section#content {
   padding: 2em 0;
 }
 
 section#content h2 {
-  font-family: "fantasy";
+  font-family: fantasy;
   text-shadow: 0.6px 0.6px #000;
   color: #932c96;
   text-align: center;
 }
 
 section#content h3 {
-  font-family: "fantasy";
+  font-family: fantasy;
   color: #8C3C2A;
   font-size: 1.5rem;
   text-align: center;
@@ -161,15 +165,6 @@ table {
   border-collapse: collapse;
 }
 
-section#content caption {
-  font-weight: bold;
-  font-size: 2em;
-  margin: 10px;
-  font-family: "Goldman", cursive;
-  text-shadow: 0.6px 0.6px #000;
-  color: #932c96;
-}
-
 th {
   background: #181C1F;
   color: #fff;
@@ -177,7 +172,7 @@ th {
   padding: 10px;
 }
 
-section#content td {
+td {
   border: 1px solid #c0c0c0;
   padding: 5px;
 }
@@ -213,13 +208,12 @@ section#articles {
   padding: 0 0 4em 0;
 }
 
-section#articles h2,
-#content h2 {
+section#articles h2 {
   flex: 0 0 100%;
   text-shadow: 0.6px 0.6px #000;
   color: #932c96;
   text-align: center;
-  font-family: "fantasy", cursive;
+  font-family: fantasy, cursive;
   font-size: 2em;
 }
 
@@ -231,6 +225,7 @@ section#articles h2,
   font-size: 0.8rem;
   border-radius: 10px;
   background: #fff;
+  margin: 1em 0;
 }
 
 #articles article.post h2 {
@@ -239,10 +234,9 @@ section#articles h2,
 }
 
 #articles article.post:hover {
-  box-shadow: 16px 10px 10px rgba(100, 30, 200, 2);
+  box-shadow: 16px 10px 10px rgba(100, 30, 200, 0.4);
 }
 
-#articles article time,
 #articles article figcaption,
 #articles article footer {
   font-size: 0.8em;
@@ -265,20 +259,12 @@ section#articles h2,
   border-radius: 2.5px;
 }
 
-#articles ul {
-  padding: 0 20px;
-}
-
-#articles li {
-  margin-bottom: 20px;
-}
-
 /* Hero Section */
 #hero {
   padding: 4em 0;
 }
 
-/* Aside / Sidebar */
+/* Aside Section */
 aside[role="complementary"] {
   background-color: #5b2a8c;
   color: #ffffff;
@@ -296,16 +282,14 @@ aside article.widget {
   flex: 1;
 }
 
-aside article a:link,
-aside article a:visited {
+aside article a {
   color: #ffffff;
   display: block;
   margin-top: 1.2em;
   letter-spacing: 1.2px;
 }
 
-aside article a:hover,
-aside article a:active {
+aside article a:hover {
   text-decoration: none;
 }
 
@@ -327,14 +311,13 @@ footer#colophon {
   text-transform: uppercase;
 }
 
-#colophon h6 a:link,
-#colophon h6 a:visited {
+#colophon h6 a {
   color: #fff;
 }
 
 #colophon .disclose {
-  color:white;
-  text-align:center;
+  color: white;
+  text-align: center;
   font-style: italic;
   text-shadow: 1px 1px #000;
 }
@@ -343,17 +326,12 @@ footer#colophon {
 @media screen and (max-width: 600px) {
   header.primary nav ul {
     flex-direction: column;
-    margin: 0 auto;
-    width: 400px;
+    width: 100%;
   }
 
   header.primary nav ul li {
     margin-bottom: 10px;
-    width: 400px;
-  }
-
-  header.primary nav ul li a {
-    display: block;
+    width: 100%;
   }
 
   section#articles .container {
