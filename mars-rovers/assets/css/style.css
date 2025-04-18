@@ -101,7 +101,7 @@ header.primary h1 a {
 }
 
 header.primary h2 {
-  font-family: "Goldman", cursive;
+  font-family: "fantasy";
   font-size: 2em;
   margin: 20px auto 40px;
 }
@@ -141,20 +141,21 @@ header.primary nav ul li a:hover {
 
 /* Content Section */
 section#content {
-  padding: 2em 0;
+  padding: auto;
 }
 
 section#content h2 {
-  font-family: fantasy;
+  font-family: "fantasy";
   text-shadow: 0.6px 0.6px #000;
+  font-size:2em;
   color: #932c96;
   text-align: center;
 }
 
 section#content h3 {
-  font-family: fantasy;
+  font-family: "fantasy";
   color: #8C3C2A;
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -213,7 +214,7 @@ section#articles h2 {
   text-shadow: 0.6px 0.6px #000;
   color: #932c96;
   text-align: center;
-  font-family: fantasy, cursive;
+  font-family: fantasy;
   font-size: 2em;
 }
 
