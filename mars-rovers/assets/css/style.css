@@ -1,0 +1,370 @@
+/* Color Theme  
+#F28D52
+#D96B43
+#593122
+#8C3C2A
+#F2F2F2
+*/
+
+/* Box Sizing */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Utility Styles */
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: auto;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  max-width: 33%;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* Global Styles */
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header.primary {
+  background-color: #181c1f;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000;
+  padding: 6em 2em;
+  position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url("https://cdn.mos.cms.futurecdn.net/4JaLHdeBuiaa8GWB2G7qdW.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.65;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #fff;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/NASA-Logo.svg/944px-NASA-Logo.svg.png");
+  display: block;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: 300px;
+  width: 300px;
+  height: 245px;
+}
+
+header.primary h2 {
+  font-family: "Goldman", cursive;
+  font-size: 2em;
+  margin: 20px auto 40px;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+
+header.primary nav ul li a {
+  color: blue;
+  text-decoration: none;
+  text-shadow: 2px 2px #000;
+  font-style: italic;
+  background-color: rgba(50, 50, 20, 0.5);
+  padding: 8px 16px;
+  border: 1px dotted;
+  border-radius: 10px;
+  transition: 2s;
+  display: block;
+}
+
+nav.primary ul li a:hover {
+  background-color: rgba(50, 50, 20, 1);
+  transition: 1s;
+}
+
+/* Content */
+section#content {
+  padding: 2em 0;
+}
+
+section#content h2 {
+  font-family: "fantasy";
+  text-shadow: 0.6px 0.6px #000;
+  color: #932c96;
+  text-align: center;
+}
+
+section#content h3 {
+  font-family: "fantasy";
+  color: #8C3C2A;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+}
+
+section#content caption {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 10px;
+  font-family: "Goldman", cursive;
+  text-shadow: 0.6px 0.6px #000;
+  color: #932c96;
+}
+
+th {
+  background: #181C1F;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+section#content td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+td:nth-child(odd) {
+  text-align: center;
+}
+
+td:nth-child(even) {
+  text-align: right;
+}
+
+tr:nth-child(odd) {
+  background-color: orange;
+}
+
+tr:nth-child(even) {
+  background-color: blue;
+}
+
+tr:hover {
+  background: #c0c0c0;
+}
+
+/* Articles Section */
+section#articles {
+  background: #181c1f;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 0 0 4em 0;
+}
+
+section#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  text-shadow: 0.6px 0.6px #000;
+  color: #932c96;
+  text-align: center;
+  font-family: "fantasy", cursive;
+  font-size: 2em;
+}
+
+#articles article.post {
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#articles article.post h2 {
+  font-size: 1.5em;
+  text-shadow: 0.6px 0.6px #000;
+}
+
+#articles article.post:hover {
+  box-shadow: 16px 10px 10px rgba(100, 30, 200, 2);
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+  font-size: 0.8em;
+  color: #c0c0c0;
+  text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+  color: #932c96;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;
+}
+
+#articles .post figure {
+  margin: 5px;
+}
+
+#articles .post img {
+  border-radius: 2.5px;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+
+#articles li {
+  margin-bottom: 20px;
+}
+
+/* Hero Section */
+#hero {
+  padding: 4em 0;
+}
+
+/* Aside / Sidebar */
+aside[role="complementary"] {
+  background-color: #5b2a8c;
+  color: #ffffff;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+aside article.widget {
+  flex: 1;
+}
+
+aside article a:link,
+aside article a:visited {
+  color: #ffffff;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+  display: none;
+}
+
+/* Footer */
+footer#colophon {
+  background-color: #38352b;
+}
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: #fff;
+}
+
+#colophon .disclose {
+  font-style: italic;
+  text-shadow: 1px 1px #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+
+  section#articles .container {
+    flex-direction: column;
+    padding-bottom: 4em;
+  }
+
+  #articles article.post {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  aside .container {
+    flex-direction: column;
+  }
+}
