@@ -130,7 +130,7 @@ header.primary nav ul li a {
   display: block;
 }
 
-header.primary nav ul li a:hover {
+nav.primary ul li a:hover {
   background-color: rgba(50, 50, 20, 1);
   transition: 1s;
 }
@@ -205,15 +205,12 @@ tr:hover {
 /* Articles Section */
 section#articles {
   background: #181c1f;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
   border-bottom: 1px solid #c0c0c0;
   padding: 0 0 4em 0;
-}
-
-#articles .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 2em;
 }
 
 section#articles h2,
@@ -336,8 +333,8 @@ footer#colophon {
 }
 
 #colophon .disclose {
-  color: white;
-  text-align: center;
+  color:white;
+  text-align:center;
   font-style: italic;
   text-shadow: 1px 1px #000;
 }
