@@ -1,0 +1,136 @@
+/* Box Sizing */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Utility Styles */
+.container {
+  margin:auto;
+  background-color:black;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  position: relative;
+  background-color: #631b05;
+  overflow: hidden;
+  height: 200px;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header.primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: url("https://mars.nasa.gov/system/news_items/main_images/9337_PIA25681-FigureA-web.jpg");
+  background-size: 55% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.45;
+  z-index: 0;
+}
+
+header.primary h1 {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+#content h2
+{
+  margin:0;
+  font-family:"fantasy";
+  text-align:center;
+  background-color: #6e2b17;
+}
+
+#content p
+{
+  margin-right:30px;
+  margin-left:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+#content p:nth-of-type(odd)
+{
+  color: #ffffff;
+}
+
+#content p:nth-of-type(even)
+{
+  color: #544fe3;
+}
+
+#content p:nth-of-type(14)
+{
+  margin-bottom:0;
+  padding-top:10px;
+  padding-bottom:20px;
+}
+
+footer#colophon {
+  margin-top:0;
+  padding: 1em 1em;
+  text-align:center;
+  background-color: #b52d1b;
+  color: #ffffff;
+}
+
+#colophon h6 {
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px)
+{
+  body {
+    font-size: 0.95rem;
+  }
+
+  header.primary {
+    height: 150px; /* slightly shorter for mobile */
+    padding: 1em;
+  }
+
+  header.primary h1 {
+    font-size: 1.75rem;
+  }
+
+  #content p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.95rem;
+  }
+
+  #content h2 {
+    font-size: 1.2rem;
+    padding: 0.5em;
+  }
+
+  footer#colophon {
+    font-size: 0.85rem;
+    padding: 0.75em 0.5em;
+  }
+}
