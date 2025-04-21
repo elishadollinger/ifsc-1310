@@ -44,7 +44,7 @@ html {
 
 /* Global Styles */
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
 }
 
@@ -80,7 +80,6 @@ header.primary h1,
 header.primary h2 {
   position: relative;
   z-index: 1;
-  font-family: 'Oswald', sans-serif;
 }
 
 header.primary h1 {
@@ -102,6 +101,7 @@ header.primary h1 a {
 }
 
 header.primary h2 {
+  font-family: "fantasy";
   font-size: 2em;
   margin: 20px auto 40px;
 }
@@ -135,7 +135,6 @@ header.primary nav ul li a {
   text-align: center;
 }
 
-/* Hover for nav */
 header.primary nav ul li a:hover {
   background-color: rgba(50, 50, 20, 1);
 }
@@ -145,21 +144,19 @@ section#content {
   padding: auto;
 }
 
-section#content h2,
-section#content h3 {
-  font-family: 'Oswald', sans-serif;
+section#content h2 {
+  font-family: "fantasy";
   text-shadow: 0.6px 0.6px #000;
+  font-size:2em;
+  color: #932c96;
   text-align: center;
 }
 
-section#content h2 {
-  font-size: 2em;
-  color: #932c96;
-}
-
 section#content h3 {
+  font-family: "fantasy";
   color: #8C3C2A;
   font-size: 3rem;
+  text-align: center;
 }
 
 /* Table Styles */
@@ -174,7 +171,6 @@ th {
   color: #fff;
   text-align: left;
   padding: 10px;
-  font-family: 'Oswald', sans-serif;
 }
 
 td {
@@ -218,8 +214,8 @@ section#articles h2 {
   text-shadow: 0.6px 0.6px #000;
   color: #932c96;
   text-align: center;
+  font-family: fantasy;
   font-size: 2em;
-  font-family: 'Oswald', sans-serif;
 }
 
 #articles article.post {
@@ -236,7 +232,6 @@ section#articles h2 {
 #articles article.post h2 {
   font-size: 1.5em;
   text-shadow: 0.6px 0.6px #000;
-  font-family: 'Oswald', sans-serif;
 }
 
 #articles article.post:hover {
@@ -275,7 +270,6 @@ aside[role="complementary"] {
   background-color: #5b2a8c;
   color: #ffffff;
   padding: 2.5em;
-  font-family: 'Oswald', sans-serif;
 }
 
 aside .container {
@@ -304,10 +298,21 @@ aside article footer {
   display: none;
 }
 
+iframe[src*="wufoo"] {
+  color:#000000;
+  
+  border: none;
+  width: 100%;
+  max-width: 700px;
+  margin: 2em auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #8C3C2A;
+}
+
 /* Footer */
 footer#colophon {
   background-color: #38352b;
-  font-family: 'Oswald', sans-serif;
 }
 
 #colophon h6 {
