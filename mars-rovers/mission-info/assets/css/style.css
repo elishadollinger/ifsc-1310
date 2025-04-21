@@ -1,0 +1,141 @@
+/* Color Theme  
+#F28D52
+#D96B43
+#593122
+#8C3C2A
+#F2F2F2
+*/
+
+/* Box Sizing */
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body
+  {
+    background-color:#000000;
+    font-family:"fantasy", sans-serif;
+    margin:0;
+    padding: 0;
+  }
+  
+  .container {
+    width:100%;
+  }
+  
+  header.primary {
+    position: relative;
+    background-color: #631b05;
+    overflow: hidden;
+    height: 200px;
+  
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  header.primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    background-image: url("https://mars.nasa.gov/system/news_items/main_images/9337_PIA25681-FigureA-web.jpg");
+    background-size: 55% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    opacity: 0.45;
+    z-index: 0;
+  }
+  
+  header.primary h1 {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+  }
+  
+  h2
+  {
+    text-align:center;
+    color:#ffffff;
+    text-decoration:underline;
+  }
+  
+  table
+  {
+    margin:auto;
+    width: 90%;
+    background-color:#c0c0c0;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td
+  {
+    border: 1px dotted;
+    color:blue;
+    padding: 2rem 0.5rem;
+  }
+  
+  tr:hover
+  {
+    background-color:black;
+  }
+  
+  footer#colophon {
+    padding-top:10px;
+    padding-bottom: 20px;
+    text-align:center;
+    background-color: #b52d1b;
+    color: #ffffff;
+  }
+  
+  #colophon h6 {
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px)
+  {
+    body {
+      font-size: 0.95rem;
+    }
+  
+    header.primary {
+      height: 150px;
+      padding: 1em;
+    }
+  
+    header.primary h1 {
+      font-size: 1.75rem;
+    }
+  
+    #content p {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 0.95rem;
+    }
+  
+    #content h2 {
+      font-size: 1.2rem;
+      padding: 0.5em;
+    }
+  
+    footer#colophon {
+      font-size: 0.85rem;
+      padding: 0.75em 0.5em;
+    }
+  }
