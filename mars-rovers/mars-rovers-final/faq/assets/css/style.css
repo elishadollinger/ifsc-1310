@@ -1,0 +1,234 @@
+/* Color Theme  
+#F28D52
+#D96B43
+#593122
+#8C3C2A
+#F2F2F2
+*/
+
+/* Box Sizing */
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Layout Foundation */
+  body {
+    text-align:center;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Utility Styles */
+  .container {
+    margin: auto;
+    flex: 1;
+  }
+  
+  .img-right {
+    float: right;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    max-width: 33%;
+  }
+  
+  .img-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+  }
+  
+  .img-center {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+  }
+  
+  /* Header Styles */
+  header.primary {
+    background-color: #181c1f;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #000;
+    padding: 6em 2em;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header.primary::before {
+    content: "";
+    background-image: url("https://cdn.mos.cms.futurecdn.net/4JaLHdeBuiaa8GWB2G7qdW.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.65;
+    z-index: 0;
+  }
+  
+  header.primary h1,
+  header.primary h2 {
+    position: relative;
+    z-index: 1;
+  }
+  
+  header.primary h1 {
+    font-size: 3.2rem;
+    margin: 20px 0;
+  }
+  
+  header.primary h1 a {
+    color: #fff;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/NASA-Logo.svg/944px-NASA-Logo.svg.png");
+    display: block;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: 300px;
+    width: 300px;
+    height: 245px;
+  }
+  
+  header.primary h2 {
+    font-family: "fantasy";
+    font-size: 2em;
+    margin: 20px auto 40px;
+  }
+  
+  header.primary nav ul {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 0;
+    margin: 30px auto;
+    list-style: none;
+  }
+  
+  header.primary nav li {
+    width: 23%;
+  }
+  
+  header.primary nav ul li a {
+    color: red;
+    text-decoration: none;
+    text-shadow: 1px 1px #000;
+    font-style: italic;
+    background-color: rgba(50, 50, 20, 0.5);
+    padding: 8px 16px;
+    border: 1px dotted;
+    border-radius: 10px;
+    transition: background-color 1s;
+    display: block;
+    text-align: center;
+  }
+  
+  header.primary nav ul li a:hover {
+    background-color: rgba(50, 50, 20, 1);
+  }
+  
+  /* Content Section */
+  #content h2 {
+    margin: 0;
+    max-width: 100%;
+    font-family: "fantasy";
+    text-align: center;
+    background-color: #6e2b17;
+  }
+  
+  #content p {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #content p:nth-of-type(odd) {
+    color: #38352b;
+  }
+  
+  #content p:nth-of-type(even) {
+    color: #544fe3;
+  }
+  
+  #content p:nth-of-type(14) {
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  /* Footer Styles */
+  footer#colophon {
+    background-color: #38352b;
+    margin: 0;
+    width: 100%;
+    padding: 1em 0;
+  }
+  
+  #colophon h6 {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  #colophon h6 a {
+    color: #fff;
+  }
+  
+  #colophon .disclose {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px #000;
+    padding-bottom: 10px;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 0.95rem;
+    }
+  
+    header.primary {
+      height: 150px;
+      padding: 1em;
+    }
+  
+    header.primary h1 {
+      font-size: 1.75rem;
+    }
+  
+    #content p {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 0.95rem;
+    }
+  
+    #content h2 {
+      font-size: 1.2rem;
+      padding: 0.5em;
+    }
+  
+    footer#colophon {
+      font-size: 0.85rem;
+      padding: 0.75em 0.5em;
+    }
+  }
