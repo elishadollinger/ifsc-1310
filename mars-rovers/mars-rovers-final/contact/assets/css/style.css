@@ -244,30 +244,26 @@ html {
     box-shadow: 0 0 10px #8C3C2A;
   }
   
-  /* Footer */
-  footer#colophon {
-    background-color: #38352b;
-  }
-  
-  #colophon h6 {
-    padding: 20px;
-    margin: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-  }
-  
-  #colophon h6 a {
-    color: #fff;
-  }
-  
-  #colophon .disclose {
-    color: white;
-    text-align: center;
-    font-style: italic;
-    text-shadow: 1px 1px #000;
-  }
+ /* Footer */
+footer#colophon {
+  background-color: #38352b;
+}
+#colophon h6 {
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+#colophon h6 a {
+  color: #fff;
+}
+#colophon .disclose {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 1px 1px #000;
+  padding-bottom: 10px;
+}
   
   /* Responsive Design */
   @media screen and (max-width: 600px) {
