@@ -232,6 +232,8 @@ section#articles h2 {
   font-size: 0.8em;
   color: #c0c0c0;
   text-transform: uppercase;
+  text-align:left;
+  padding-left:100px;
 }
 #articles .post a:link,
 #articles .post a:visited {
