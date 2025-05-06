@@ -1,11 +1,3 @@
-/* Color Theme  
-#F28D52
-#D96B43
-#593122
-#8C3C2A
-#F2F2F2
-*/
-
 /* Box Sizing */
 html {
     box-sizing: border-box;
@@ -142,6 +134,7 @@ html {
     background-color: rgba(50, 50, 20, 1);
   }
   
+  /* Content section */
   #content h2
   {
     margin: 0;
@@ -153,6 +146,7 @@ html {
     padding-bottom: 20px
   }
   
+  /* Table formatter */
   table
   {
     margin:auto;
